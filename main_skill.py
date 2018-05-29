@@ -2,6 +2,7 @@ from flask import Flask
 from flask_ask import Ask, question, statement
 from itertools import islice
 import praw
+import keys
 import random
 count = 2
 
@@ -20,9 +21,9 @@ def greet():
 @ask.intent('YesIntent')
 def getTIL():
     global count
-    reddit = praw.Reddit(client_id='Zm0DQg0eWYgPAg',
-                         client_secret='7YL_cCBr1H2rFHaBcYEV977tlUU',
-                         user_agent='Today I Learned by LysanderTheGreat v.1.0.0')
+    reddit = praw.Reddit(client_id=keys.client_id,
+                         client_secret=keys.client_secret,
+                         user_agent=keys.user_agent)
 
     til = iter(reddit.subreddit('WritingPrompts').hot(limit=50))
     try:
