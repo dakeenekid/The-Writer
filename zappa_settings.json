@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "main_skill.app", 
+        "aws_region": "us-east-1", 
+        "profile_name": "default", 
+        "project_name": "mayskill", 
+        "runtime": "python2.7", 
+        "s3_bucket": "zappa-tsl10mbil"
+    }
+}

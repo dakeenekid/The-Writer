@@ -1,0 +1,38 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "the writer",
+            "intents": [
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "no",
+                        "nah",
+                        "nope"
+                    ]
+                },
+                {
+                    "name": "HelpIntent",
+                    "slots": [],
+                    "samples": [
+                        "help",
+                        "to help me"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "ok",
+                        "yup",
+                        "yeah",
+                        "yes",
+                        "for a fun fact"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
