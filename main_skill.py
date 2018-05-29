@@ -3,7 +3,7 @@ from flask_ask import Ask, question, statement
 from itertools import islice
 import praw
 import keys
-import random
+
 count = 2
 
 def nth(iterable, n, default=None):

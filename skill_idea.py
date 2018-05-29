@@ -1,7 +1,5 @@
-# Get top fun facts from Reddit
+# Get top Writing Prompts from reddit
 
-import json
-import urllib
 from itertools import islice
 
 import praw
